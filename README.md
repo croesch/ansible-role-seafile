@@ -13,7 +13,8 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-Role variables are well documented in defaults/main.yml
+Role variables are well documented in defaults/main.yml The most important you'll want to define, is `seafile_install_version`.
+
 Some constants are set in vars/main.yml too, you normally do not want to change those, as they might affect how the
 role behaves, in unsuspected ways.
 
@@ -45,6 +46,7 @@ Using `group_vars/seafile.yml`:
 ```
 ---
 # names, files and directory locations
+seafile_install_version:    6.3.2
 seafile_user:               seafile
 seafile_user_home:          /home/seafile
 seafile_org_name:           Ginsys
